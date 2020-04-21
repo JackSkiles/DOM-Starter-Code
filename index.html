@@ -14,11 +14,11 @@
 </head>
 
 <body>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae consectetur nisi. Vivamus ut nibh justo.
-        <span id="noun1">___________</span> eros odio, tristique eget ultricies et, lacinia sit amet neque. Donec vestibulum bibendum felis at
-        auctor. Sed sed efficitur augue. <span id="noun2">________</span> efficitur accumsan lectus, eget hendrerit mi malesuada nec. Phasellus
-        egestas massa sed massa laoreet vehicula. Orci varius natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus.</p>
+    <p>One day Shrek was walking through his swamp and spotted a giant <span id="noun1">___________</span>
+        . Curious he decided to move closer to check it out. Suddenly a <span id="noun2">________</span> 
+        burst out of the beast. Furious, Shrek ran to grab his <span id="noun3">______</span>
+        out of his swamp home. He then proceeded to beat it to a pulp. Victorious, Shrek returned to
+        sleep in his swamp home.</p>
     <p>
         In hac habitasse platea dictumst. Aenean eget accumsan metus, vitae scelerisque lectus. Phasellus cursus lorem
         augue, sit amet tincidunt nulla iaculis sit amet. Vivamus iaculis sodales consectetur. Proin imperdiet odio nec
@@ -32,6 +32,9 @@
         <label>Another Noun:
             <input type="text" id="noun2Input" value="" />
         </label>
+        <label>A Third Noun:
+            <input type="text" id="noun3Input" value="" />
+        </label>
         <button type="button" id="clickMe">Click Me</button>
     </form>
 </body>
@@ -44,6 +47,24 @@
         e.preventDefault();
         
         noun1.innerHTML = noun1Input.value;
+    });
+    const myButton2 = document.getElementById("clickMe");
+    const noun2 = document.getElementById("noun2");
+    const noun2Input = document.getElementById("noun2Input");
+
+    myButton2.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        noun2.innerHTML = noun2Input.value;
+    });
+    const myButton3 = document.getElementById("clickMe");
+    const noun3 = document.getElementById("noun3");
+    const noun3Input = document.getElementById("noun3Input");
+
+    myButton3.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        noun3.innerHTML = noun3Input.value;
     });
 </script>
 
