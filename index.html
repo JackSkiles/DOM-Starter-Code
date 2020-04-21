@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <p>One day Shrek was walking through his swamp and spotted a giant <span id="noun1">___________</span>
-        . Curious he decided to move closer to check it out. Suddenly a <span id="noun2">________</span> 
-        burst out of the beast. Furious, Shrek ran to grab his <span id="noun3">______</span>
-        out of his swamp home. He then proceeded to beat it to a pulp. Victorious, Shrek returned to
+    <p>One day Shrek was walking through his swamp and spotted a giant <span id="noun1">__noun1__</span>
+        . Curious he decided to move closer to check it out. Suddenly a <span id="noun2">__noun2__</span> 
+        burst out of the <span id="noun12">__noun1__</span>. Furious, Shrek ran to grab his <span id="noun3">__noun3__</span>
+        out of his swamp home. He then proceeded to beat it to a pulp using the <span id="noun31">__noun3__</span>. Victorious, Shrek returned to
         sleep in his swamp home.</p>
     <p>
         In hac habitasse platea dictumst. Aenean eget accumsan metus, vitae scelerisque lectus. Phasellus cursus lorem
@@ -65,6 +65,20 @@
         e.preventDefault();
 
         noun3.innerHTML = noun3Input.value;
+    });
+    const noun12 = document.getElementById("noun12");
+
+    myButton3.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        noun12.innerHTML = noun1Input.value;
+    });
+    const noun31 = document.getElementById("noun31");
+
+    myButton3.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        noun31.innerHTML = noun3Input.value;
     });
 </script>
 
