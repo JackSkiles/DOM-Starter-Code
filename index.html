@@ -19,7 +19,7 @@
         burst out of the <span id="noun12">__noun1__</span>. Furious, Shrek ran to grab his <span id="noun3">__noun3__</span>
         out of his swamp home. He then proceeded to beat it to a pulp using the <span id="noun31">__noun3__</span>. Victorious, Shrek returned to
         sleep in his swamp home.</p>
-    <p>
+    <p id="par2">
         In hac habitasse platea dictumst. Aenean eget accumsan metus, vitae scelerisque lectus. Phasellus cursus lorem
         augue, sit amet tincidunt nulla iaculis sit amet. Vivamus iaculis sodales consectetur. Proin imperdiet odio nec
         tellus luctus porttitor. Phasellus tristique eget dui ut convallis. Vestibulum suscipit, magna eget maximus
@@ -36,6 +36,12 @@
             <input type="text" id="noun3Input" value="" />
         </label>
         <button type="button" id="clickMe">Click Me</button>
+    </form>
+    <form>
+        <label>Would you like to view a second paragraph?:
+            <button type="myFunction" id="clickYes">Yes</button>
+            <button type="myFunction" id="clickNo">No</button>
+        </label>
     </form>
 </body>
 <script>
@@ -80,6 +86,15 @@
 
         noun31.innerHTML = noun3Input.value;
     });
+
+    function hidePar () {
+        var hidden = document.getElementById("par2");
+        if (hidden.style.display === "block") {
+            hidden.style.display = "none";
+        } else {
+            hidden.style.display = "block";
+        }
+    }
 </script>
 
 </html>
